@@ -1,0 +1,11 @@
+name: First Workflow
+on:
+  push:
+    branch: main
+
+jobs: 
+  first-job-of-workflow:
+      runs-on: self-hosted
+      steps: 
+         -name: print hi
+           run: echo "Hi"
